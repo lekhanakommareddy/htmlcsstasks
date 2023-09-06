@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.login-container {
+    width: 300px;
+    height: 530px; 
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #600f0f;
+    border-radius: 5px;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+
+.input-container {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-top: 5px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+button[type="submit"] {
+    background-color: #4CAF50; 
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 40px; 
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+button[type="submit"]:hover {
+
+    background-color: #45a049; 
+}
+
+button.cancel {
+    margin-top: 15px;
+    background-color: #FF0000; 
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 20px; 
+    cursor: pointer;
+}
+
+button.cancel:hover {
+    background-color: #FF3333; 
+}
+
+
+.circle {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color:white;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 50%;
+}
+
+
+.forgot-password {
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+    color: red;
+}
+
+
+input[type="text"]:focus::placeholder,
+input[type="password"]:focus::placeholder {
+    color: transparent;
+    background-color: transparent;
+}
