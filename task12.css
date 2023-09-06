@@ -1,0 +1,151 @@
+/* Reset default margin, padding, and box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    background-color: #75203F;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container styles */
+.container {
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin: 0 20px;
+}
+
+/* Registration box styles */
+.registration-box {
+    background-color: #A22B55;
+    border-radius: 5px;
+    padding: 10px;
+    max-width: 650px;
+    width: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    overflow: hidden;
+}
+
+/* Header styles */
+h2 {
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+/* Form group styles */
+.form-group {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Label styles */
+label {
+    font-weight: bold;
+    color: #fff;
+    width: 30%;
+    text-align: left;
+}
+
+/* Input styles */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"],
+select,
+textarea {
+    width: 65%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 16px;
+    outline: none;
+}
+
+/* Multi-select dropdown styles */
+select[multiple] {
+    height: auto;
+}
+
+/* Submit button styles */
+input[type="submit"] {
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 3px;
+    padding: 5px 10px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+}
+
+input[type="submit"]:hover {
+    background-color: white;
+    color: black;
+}
+
+/* Radio button styles */
+.radio-button {
+    display: inline-block;
+    margin-right: 20px;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* Style for radio buttons */
+.radio-button input[type="radio"] {
+    opacity: 0;
+    cursor: pointer;
+    position: absolute;
+}
+
+/* Style for radio button labels */
+.radio-button label {
+    display: inline-block;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 16px;
+    position: relative;
+}
+
+/* Radio button label hover effect */
+.radio-button label:hover {
+    background-color: #ccc;
+}
+
+/* Style for selected radio button label */
+.radio-button input[type="radio"]:checked + label {
+    background-color: #4CAF50;
+    color: #fff;
+    border: 1px solid #4CAF50;
+}
+
+/* Default values for input fields and textarea */
+input[type="text"][value="Your Name"],
+input[type="email"][value="your@email.com"],
+textarea:empty::before {
+    content: attr(value);
+    color: #999;
+}
+
+/* Clear the default value on focus */
+input[type="text"]:focus[value="Your Name"],
+input[type="email"]:focus[value="your@email.com"],
+textarea:focus:empty::before {
+    content: "";
+    color: inherit;
+}
