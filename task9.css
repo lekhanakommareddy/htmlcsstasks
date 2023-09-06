@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+.sidehoverbar a {
+    position: absolute;
+    font-size: 22px;
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+    border-radius: 0px 5px 5px 0px;
+    left: -170px;
+    transition: 0.5s;
+    opacity: 0.5;
+}
+
+
+.a {
+    background-color: green; /* Green */
+    top: 50px;
+    width: 210px;
+    height: 30px;
+}
+
+.b {
+    background-color: blue; /* Red */
+    top: 110px;
+    width: 210px;
+    height: 30px;
+}
+
+.c {
+    background-color:red; /* Blue */
+    top: 170px;
+    width: 210px;
+    height: 30px;
+}
+
+.d {
+    background-color:gray; /* Yellow */
+    top: 230px;
+    width: 210px;
+    height: 30px;
+}
+
+
+
+
+.sidehoverbar a:hover {
+    left: 0px;
+    opacity: 1;
+}
+
+
+.sidehoverbar i {
+    float: right;
+}
+
+
+.hoverable-topic {
+    margin-left: 55px;
+}
